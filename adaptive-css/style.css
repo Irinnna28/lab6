@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+p {
+  margin: 0;
+}
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.subtitle {
+  font-size: 14px;
+  color: #c4c9d1;
+  text-align: center;
+}
+.blue {
+  color: #43a9ff;
+}
+.red {
+  color: #f5325b;
+}
+.btn {
+  display: block;
+  width: 230px;
+  height: 50px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 25px;
+  background: #fff;
+  color: #43a9ff;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(67, 169, 255, 0.15);
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 45px 14% 0;
+}
+.round-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(67, 169, 255, 0.15);
+}
+.logo {
+  width: 490px;
+  height: 244px;
+  margin-top: -45px;
+  padding-top: 65px;
+  background: url("images/elipsa_2.png") no-repeat center / 100% 100%;
+  text-align: center;
+}
+.logo-name {
+  font-size: 34px;
+  font-weight: 500;
+  color: #43a9ff;
+}
+.logo-slogan {
+  font-size: 11px;
+  font-weight: 700;
+  color: #e6e9ee;
+}
+.hero-text {
+  padding-top: 90px;
+}
+.hero-text .title {
+  font-size: 46px;
+}
+.hero-text .subtitle {
+  margin: 20px 0 55px;
+}
+.hero-img {
+  width: 100%;
+  margin-top: -14%;
+}
+.features {
+  margin-top: -13%;
+  padding: 0 5% 90px;
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 75px 0 60px;
+}
+.feature {
+  flex: 1;
+  max-width: 260px;
+  text-align: center;
+}
+.feature img {
+  margin: 0 auto 25px;
+}
+.feature h3 {
+  margin: 0 0 25px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.feature p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #c4c9d1;
+}
+.row {
+  display: flex;
+  min-height: 400px;
+  background: #f7f8fb;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.photo {
+  width: 50%;
+  object-fit: cover;
+}
+.side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 40px;
+}
+.app {
+  min-height: 650px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+.player {
+  background-image: url("images/snowflake.png");
+  background-position: left top;
+}
+.chat {
+  background-image: url("images/snowflake_2.png");
+  background-position: right bottom;
+}
+.text-box {
+  max-width: 480px;
+}
+.text-box .title {
+  margin-bottom: 25px;
+  font-size: 34px;
+  text-align: left;
+}
+.text-box p {
+  font-size: 13px;
+  line-height: 2;
+  color: #c4c9d1;
+}
+.quote {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f7f8fb;
+  background-image: url("images/man.jpg"), url("images/snowflake_white.png");
+  background-repeat: no-repeat;
+  background-size: 59.6% auto, 33.7% auto;
+  background-position: 4.8% bottom, 20.6% -157%;
+  background-blend-mode: multiply, normal;
+}
+.quote::before {
+  content: "";
+  padding-top: 31.5%;
+}
+.quote .text-box {
+  width: 50%;
+  max-width: none;
+  padding: 40px 10% 40px 40px;
+}
+.quote .name {
+  margin-top: 40px;
+  color: #000;
+  font-weight: 500;
+}
+.offer {
+  padding: 90px 5% 0;
+}
+.offer .title {
+  margin: 5px 0 60px;
+}
+footer {
+  margin-top: -6%;
+}
+@media (max-width: 992px) {
+  .title,
+  .hero-text .title,
+  .text-box .title {
+    font-size: 26px;
+  }
+  .topbar {
+    padding: 30px 5% 0;
+  }
+  .round-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .logo {
+    width: 240px;
+    height: 120px;
+    padding-top: 35px;
+  }
+  .logo-name {
+    font-size: 22px;
+  }
+  .logo-slogan {
+    font-size: 8px;
+  }
+  .hero-text {
+    padding: 60px 5% 0;
+  }
+  .features-list {
+    flex-wrap: wrap;
+  }
+  .feature {
+    flex: 0 0 45%;
+  }
+  .row,
+  .reverse {
+    flex-direction: column;
+  }
+  .app {
+    min-height: 0;
+  }
+  .photo {
+    width: 100%;
+    height: 260px;
+  }
+  .side {
+    width: 100%;
+  }
+  .quote::before {
+    display: none;
+  }
+  .quote {
+    padding-top: 320px;
+    background-size: auto 420px, 300px auto;
+    background-position: center -100px, calc(50% - 14px) 10px;
+  }
+  .quote .text-box {
+    width: 100%;
+    padding: 30px 20px 40px;
+  }
+}
