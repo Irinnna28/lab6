@@ -2,6 +2,17 @@
 <html lang="zxx">
 <head>
   <meta charset="UTF-8">
+  <script>
+    let start = Date.now();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('DOMContentLoaded: ' + (Date.now() - start) + ' мс');
+    });
+
+    window.addEventListener('load', function () {
+      console.log('load: ' + (Date.now() - start) + ' мс');
+    });
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crios free PSD template</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap">
